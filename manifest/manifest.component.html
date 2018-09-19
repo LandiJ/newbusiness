@@ -1,0 +1,984 @@
+<div class="content pt-5 mt-4">
+
+  <!--begin new manifest row-->
+  <div class="row">
+
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-2">
+              <a href="#"><i class="fas fa-angle-double-left"></i></a> <span style="font-weight: bold;color:#666666;">MANIFEST</span>
+              <a href="#"><i class="fas fa-angle fa-angle-double-right"></i></a><br/>
+              <span style="font-weight: bold;color:#333333;">#082718MON-1X</span>
+            </div>
+            <div class="col-md-2">
+              <span class="manifest-label mb-4">Location:</span> <span class="manifest-data">145</span>
+              <br/><span class="manifest-label">Date:</span> <span class="manifest-data"> 8/21/18</span>
+            </div>
+            <div class="col-md-2">
+              <span class="manifest-label">Vehicle#:</span> <span class="manifest-data"> 578398</span>
+              <br/>
+              <span class="manifest-label">Mileage:</span> <span class="manifest-data"> 0</span>
+            </div>
+
+            <div class="col-md-3">
+              <span class="manifest-label">A/R Reconciled </span> <input type="checkbox" name="checkbox" class="bootstrap-switch"
+                data-on-label="ON" data-off-label="OFF"><br/>
+              <span class="manifest-label">Reconciled by:</span> <a class="manifest-data" href="#">bjones</a>
+            </div>
+            <div class="col-md-3">
+
+              <button style="float:right;" type="button" rel="tooltip" class="btn btn-primary btn-icon  btn-neutral mr-3 ml-4">
+                <i class="fas fa-print fa-2x" style="float: right;color:#3399cc;"> </i>
+              </button>
+              <button style="background-color:#003366;float:right;" class="btn btn-info">
+                <span class="btn-label">
+                  <span style="font-size:  1.25em;font-weight: bold;">SYNC <i class="fas fa-sync pl-1"></i> </span>
+
+                </span>
+
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end manifest row-->
+
+
+
+  <!--Driver info-->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card card-stats">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-12">
+              <div style="min-height: 118px;">
+                <span style="font-weight: bold;color:#003366;font-size: 1.5rem; ">Dan Driverman</span><br/>
+                <span class="manifest-label">Route ID:</span> <span class="manifest-data">MON-1X</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--AR Info-->
+    <div class="col-md-2">
+      <div class="card card-stats">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="statistics">
+                <div class="info">
+
+                  <h3 class="info-title">$42</h3>
+                  <h6 class="stats-title">INVOICED</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card card-stats">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="statistics">
+                <div class="info">
+
+                  <h3 class="info-title">$100</h3>
+                  <h6 class="stats-title">TO COLLECT</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="statistics">
+                <div class="info">
+
+                  <h3 class="info-title">
+                    <small>$</small>25</h3>
+                  <h6 class="stats-title">COLLECTED</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="statistics">
+                <div class="info">
+
+                  <h3 class="info-title">$562</h3>
+                  <h6 class="stats-title">REMAINING</h6>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end driver row-->
+
+
+  <!--begin stop row-->
+
+
+  <div class="row">
+
+    <div class="col-md-12">
+      <div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+        <div class="card">
+          <div class="card-header pr-3 pl-3" style="background-color:#0c5297;color: #ffffff;min-height: 50px;font-size:1.25em;font-weight: 500;letter-spacing: 2px;">
+            <div class="row">
+
+              <div class="col-md-5">
+                #1 - <i class="fas fa-car"></i> LOS BROTHERS ACCOUNTS (1969202)
+
+              </div>
+              <div class="col-md-5">
+                Total Collected: $50.00 / $150.00
+              </div>
+              <div class="col-md-2 text-right">
+                <a href="#" data-toggle="modal" data-target=".payStop">
+                  <button style="width:100%;" class="btn btn-primary btn-round btn-sm mt-0 mb-0"><i class="fas fa-piggy-bank"></i>
+                    Pay Stop
+                  </button></a>
+
+
+
+              </div>
+            </div>
+          </div>
+
+          <div id="paymentinput" class="collapse" role="tabpanel" aria-labelledby="makepayment">
+
+            <div class="card mb-1">
+              <div class="card-body" style="background-color: #f3f4f8;border-bottom:thin #e3e3e3 solid;">
+
+
+                <div class="row">
+
+                  <div class="col-md-2 pl-5">
+                    Method:
+                    <select class="selectpicker" data-size="7" data-style="btn btn-primary btn-round" title="Method">
+
+                      <option value="2">Cash</option>
+                      <option value="3">Check</option>
+                      <option value="3">Credit Card</option>
+                      <option value="3">CC on File</option>
+                      <option value="3">Credit Invoice</option>
+                      <option value="3">Open Return</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+
+                    <div class="form-group">
+                      Amount: <input style="background-color: white;" type="text" class="form-control" value="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+
+                    <div class="form-group underline">
+                      Reference #: <input style="background-color: white;" type="text" class="form-control" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group mt-2">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#paymentinput" aria-expanded="true" aria-controls="collapseOne"><button
+                          style="width:100%;" class="btn btn-primary btn-round  pr-5">Submit</button></a>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <!---begin table listing orders for stop----->
+
+          <div class="card-body pt-0">
+
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <th class="text-center">
+                  </th>
+                  <th class="text-left" width="50%">
+                    ORDER
+                  </th>
+                  <th>
+                    TERMS
+                  </th>
+                  <th>
+                    DUE
+                  </th>
+                  <th class="text-left">
+                    COLLECTED
+                  </th>
+
+                  <th class="left">
+                    REMAINING
+                  </th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center">
+                      <div style="border-right: thin solid #cccccc;">
+                        <i style="color:orangered; font-size:1.25rem;" class="fas fa-times-circle pt-2"></i><br/> Skipped
+                      </div>
+                    </td>
+                    <td class="pl-4">
+                      <i style="color:#003366" class="fas fa-box pr-1"></i> <a href="#invoice">N2543553</a>
+                      <br />
+                      <small>Customer not present</small>
+                    </td>
+                    <td class="text-left">
+                      CHARGE
+                    </td>
+                    <td class="text-left">
+                      $100.00
+                    </td>
+                    <td>
+                      $75.00
+                    </td>
+
+                    <td class="text-left">
+                      <span style="color:orangered">$(40.00) <small><i class="fas fa-exclamation-triangle"></i> </small></span>
+                    </td>
+                    <td class="text-right" role="tablist">
+
+                      <span style="border-left: thin solid #cccccc;" class="pr-3 pl-3 pt-3 pb-3">
+                        <a href="#" data-toggle="modal" data-target="#comments">
+                          <i class="fas fa-comments"></i>
+                        </a>
+                      </span>
+                      <span style="border-left: thin solid #cccccc;" class="pr-3 pl-3 pt-3 pb-3">
+                        <a href="#" data-toggle="modal" data-target="#reattempts">
+                          <i class="fas fa-truck"></i>
+                        </a>
+                      </span>
+                      <span style="border-left: thin solid #cccccc;" class="pr-4 pl-4 pt-3 pb-3">
+                        <a href="#" data-toggle="modal" data-target="#pay">
+                          <i class="fas fa-piggy-bank"></i>
+                        </a>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      <div style="border-right: thin solid #cccccc;">
+                        <i style="color: #006699; font-size:1.25rem;" class="fas fa-check-circle pt-2"></i> <br/> Picked
+                        Up
+                      </div>
+
+                    </td>
+                    <td class="text-left pl-3">
+                      <i style="color:#003366" class="fas fa-box-open pl-1"></i> <a href="#pants">N2543553</a>
+                      <br />
+                      <small>Wrong Part: Customer received right headlamp instead of left</small>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td class="text-left">
+                      $(120.00)
+                    </td>
+                    <td class="text-left">
+                      $0.00
+                    </td>
+
+                    <td class="text-left">
+                      $(120.00)
+                    </td>
+
+                    <td class="text-right">
+                      <span style="border-left: thin solid #cccccc;" class="pr-3 pl-3 pt-3 pb-3">
+                        <a href="#" data-toggle="modal" data-target="#comments">
+                          <i class="fas fa-comments"></i>
+                        </a>
+                      </span>
+                      <span style="border-left: thin solid #cccccc;" class="pr-3 pl-3 pt-3 pb-3">
+                        <a href="#" data-toggle="modal" data-target="#reattempts">
+                          <i class="fas fa-truck"></i>
+                        </a>
+                      </span>
+                      <span style="border-left: thin solid #cccccc;" class="pr-4 pl-4 pt-3 pb-3">
+                        <a href="#" data-toggle="modal" data-target="#payments">
+                          <i class="fas fa-piggy-bank"></i>
+                        </a>
+                      </span>
+
+
+
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      <div style="border-right: thin solid #cccccc;">
+                        <i style="color: #006699; font-size:1.25rem;" class="fas fa-check-circle pt-2"></i> <br/> Picked
+                        Up
+                      </div>
+                    </td>
+                    <td class="text-left pl-3">
+                      <i style="color:#003366" class="fas fa-box pl-1"></i><a href="#nothing"> N2543553</a>
+                      <br />
+                      <small></small>
+                    </td>
+                    <td>
+                      CHARGE
+                    </td>
+                    <td>
+                      $250.00
+                    </td>
+                    <td class="text-left">
+                      $250.00
+                    </td>
+
+                    <td class="text-left">
+                      $0.00
+                    </td>
+
+                    <td class="text-right">
+
+                      <span style="border-left: thin solid #cccccc;" class="pr-3 pl-3 pt-3 pb-3">
+                        <a href="#" data-toggle="modal" data-target="#comments">
+                          <i class="fas fa-comments"></i>
+                        </a>
+                      </span>
+                      <span style="border-left: thin solid #cccccc;" class="pr-3 pl-3 pt-3 pb-3">
+                        <a href="#" data-toggle="modal" data-target="#reattempts">
+                          <i class="fas fa-truck"></i>
+                        </a>
+                      </span>
+                      <span style="border-left: thin solid #cccccc;" class="pr-4 pl-4 pt-3 pb-3">
+                        <a href="#" data-toggle="modal" data-target="#payments">
+                          <i class="fas fa-piggy-bank"></i>
+                        </a>
+                      </span>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--end table listing orders for stop-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--test modal-->
+  <div class="modal fade payStop" tabindex="-1" role="dialog" aria-labelledby="payByStop" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <span style="color: #666">
+                Payments By Stop</span>
+            </div>
+            <div class="col-md-6 text-right"><a data-dismiss="modal" href="#"><i style="color:orangered;" class="fas fa-times"></i></a></div>
+
+          </div>
+          <div class="row" style="border-bottom:thin #ccc solid;">
+            <div class="col-md-12">
+              <h5 class="mb-1 pb-0"> #1 Los Brothers (1969202)</h5>
+            </div>
+
+          </div>
+          <div class="row mt-1">
+            <div class="col-md-3">
+              TO COLLECT:
+              <h5>$100.00</h5>
+            </div>
+            <div class="col-md-4">
+              RECEIVED:
+              <h5>$20.00 <span style="color:orangered;">+ $100.00</span></h5>
+            </div>
+
+            <div class="col-md-3">
+              REMAINING:
+              <h5><span style="color:orangered;">($20.00)</span></h5>
+            </div>
+            <div class="col-md-2 text-right">
+              <span class="manifest-label text-left">Date:</span><span class="manifest-data"> 08/18/18</span>
+            </div>
+
+          </div>
+
+
+          <!--table-->
+          <div class="table-responsive">
+
+            <!----------------------Pay Stop Step 1----------------->
+            <div id="payStopStep1">
+              <table class="table">
+                <tbody>
+
+
+                  <tr style="background-color:#0c5297;color:white;">
+                    <th>METHOD</th>
+                    <th>REFERENCE #</th>
+                    <th></th>
+                    <th>AMOUNT</th>
+
+                    <th></th>
+                  </tr>
+                  <tr style="border:none;">
+                    <td> <select class="selectpicker" data-size="7" data-style="btn btn-primary btn-round" title="Select">
+
+                        <option value="2">Cash</option>
+                        <option value="3">Check</option>
+                        <option value="3">Credit Card</option>
+                        <option value="3">CC on File</option>
+                        <option value="3">Credit Invoice</option>
+                        <option value="3">Open Return</option>
+                      </select></td>
+                    <td>
+                      <div class="form-group pt-2">
+                        <input type="text" class="form-control" placeholder="Reference#">
+
+                      </div>
+
+                    </td>
+                    <td style="text-align:right;">$</td>
+                    <td>
+                      <div class="form-group pt-2">
+                        <input type="text" class="form-control" placeholder="Amount"></div>
+                    </td>
+                    <td> <button class="btn btn-primary btn-round">
+                        + Add More
+                      </button></td>
+                  </tr>
+                  <tr style="border:none;">
+                    <td> <select class="selectpicker" data-size="7" data-style="btn btn-primary btn-round" title="Select">
+
+                        <option value="2">Cash</option>
+                        <option value="3">Check</option>
+                        <option value="3">Credit Card</option>
+                        <option value="3">CC on File</option>
+                        <option value="3">Credit Invoice</option>
+                        <option value="3">Open Return</option>
+                      </select></td>
+                    <td>
+                      <div class="form-group pt-2">
+                        <input type="text" class="form-control" placeholder="Reference/Order#">
+
+                      </div>
+
+                    </td>
+                    <td style="text-align:right;">$</td>
+                    <td>
+                      <div class="form-group pt-2">
+                        <input type="text" class="form-control" placeholder="Amount"></div>
+                    </td>
+                    <td></td>
+                  </tr>
+
+              </table>
+              <!--end table-->
+              <div style="height:200px;"></div>
+              <div class="row text-right">
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  <button id="#btnEndStep1" type="button" class="btn btn-primary">Next</button>
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+            <!----------------------Pay Stop Step 2----------------->
+            <div id="payStopStep2">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td colspan="5"><i class="fas fa-alert"></i><b>Overpayment:</b> <span style="color:orangered;">The amount
+                        entered is greater than the amount remaining for invoice #N1234757. Please provide an overpayment
+                        reason below:</span><br>
+                      <input type="text" class="form-control" placeholder="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">Apply to Invoices:</td>
+                  </tr>
+                  <tr style="border:none;">
+                    <td>N1234567</td>
+                    <td style="text-align:right;">$</td>
+                    <td>
+                      <div class="form-group pt-2">
+                        <input type="text" class="form-control" placeholder=""></div>
+
+                    </td>
+
+                    <td>
+                      / $20.00
+                    </td>
+                    <td>COD</td>
+
+                    <tr style="border:none;">
+                      <td>N1234887</td>
+                      <td style="text-align:right;">$</td>
+                      <td>
+                        <div class="form-group pt-2">
+                          <input type="text" class="form-control" placeholder=""></div>
+
+                      </td>
+
+                      <td>
+                        / $10.00
+                      </td>
+                      <td>COD</td>
+
+                    </tr>
+                    <tr style="border:none;">
+                      <td>
+                        N1234757</td>
+                      <td style="text-align:right;">$</td>
+                      <td>
+                        <div class="form-group pt-2">
+                          <input type="text" class="form-control" placeholder=""></div>
+
+                      </td>
+
+                      <td>
+                        / $50.00
+                      </td>
+                      <td>NET 10</td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+
+
+                </tbody>
+              </table>
+              <!--end table-->
+              <div class="row text-right">
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  <button id="#" type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end paystopmodal modal-->
+
+
+
+
+  <!--new comments modal-->
+  <div class="modal fade  " id="comments" tabindex="-1" role="dialog" aria-labelledby="commentsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <span style="color: #666">3 Comments </span><i class="fas fa-comments"></i>
+            </div>
+            <div class="col-md-6 text-right"><a data-dismiss="modal" href="#"><i style="color:orangered;" class="fas fa-times"></i></a></div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h5> <i style="color:#003366" class="fas fa-box-open pl-1"></i> N2543553</h5>
+
+            </div>
+            <div class="col-md-6">
+              <i class="fa fas-car"></i> Roberts Body Shop (72270)
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <span style="font-weight: bold;">Add Comment:</span><br/>
+
+                <div class="form-group">
+                  <input type="text" class="form-control">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-6">
+              <span style="font-weight: bold;">najessey </span><i style="color:#666;" class="fas fa-comment"></i><span class="small"
+                style="color:#ccc;"> 09/08/2018</span>
+            </div>
+            <div class="col-md-6 text-right">
+
+              <a style="font-weight: 300;" href="#"> <i class="fas fa-pen"></i></a>
+              <a style="font-weight: 300;padding-left:2px;" href="#"> <i class="fas fa-times"></i></a>
+            </div>
+          </div>
+
+
+          <div class="row mb-2">
+            <div class="col-md-12">
+              <span style="color:#333;">This is a generic comment</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <span style="font-weight: bold;">najessey </span><i style="color:#666;" class="fas fa-comment"></i><span class="small"
+                style="color:#ccc;"> 09/08/2018</span>
+            </div>
+            <div class="col-md-6 text-right">
+
+              <a style="font-weight: 300;" href="#"> <i class="fas fa-pen"></i></a>
+              <a style="font-weight: 300;padding-left:2px;" href="#"> <i class="fas fa-times"></i></a>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-12">
+              This is a generic comment
+            </div>
+          </div>
+
+
+          <div class="row text-right">
+            <div class="col-md-12">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--end modal-->
+  <!-- Re attempt modal -->
+  <div class="modal fade  " id="reattempts" tabindex="-1" role="dialog" aria-labelledby="reattemptsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <i class="fas fa-truck"></i><span style="color: #666"> Re-Attempt</span>
+            </div>
+            <div class="col-md-6 text-right"><a data-dismiss="modal" href="#"><i style="color:orangered;" class="fas fa-times"></i></a></div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h5> <i style="color:#003366" class="fas fa-box pl-1"></i> N2543553</h5>
+
+            </div>
+            <div class="col-md-6">
+              Roberts Body Shop (72270)
+            </div>
+          </div>
+
+
+
+          <div class="row">
+            <div class="col-md-4"><span class="manifest-label">Type:</span> </div>
+            <div class="col-md-4 text-left"><span class="manifest-data">Order</span></div>
+            <div class="col-md-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"> <span class="manifest-label">Order#:</span> </div>
+            <div class="col-md-4  text-left"> <span class="manifest-data">93692065</span></div>
+            <div class="col-md-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"><span class="manifest-label">Invoice#:</span> </div>
+            <div class="col-md-4  text-left"> <span class="manifest-data"> 93692065</span></div>
+            <div class="col-md-4"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4"> <span class="manifest-label">Re-Attempt On<span style="color:red">*</span></span></div>
+            <div class="col-md-4  text-left">
+              <div class="form-group">
+                <input type="text" class="form-control datepicker" value="10/05/2018">
+              </div>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4"><span class="manifest-label">Reason:</span> </div>
+            <div class="col-md-4  text-left"> <select class="selectpicker" data-size="11" data-style="btn btn-primary btn-round btn-sm"
+                title="Select Reason">
+
+
+                <option value="3">Customer Not Available</option>
+                <option value="3">Payment Not Available</option>
+                <option value="3">Part Not Available</option>
+                <option value="3">Too Early/Too Late</option>
+                <option value="3">Delivery Not Collected</option>
+              </select></div>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="row">
+            <div class="col-md-12 small">
+              <span style="color:red">*</span>Required Field</div>
+          </div>
+          <div class="row text-right">
+            <div class="col-md-12">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--end modal-->
+
+
+
+
+
+
+
+  <!--payment modal-->
+
+  <div class="modal fade" id="pay" tabindex="-1" role="dialog" aria-labelledby="payTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <span style="color: #666"> Payments</span>
+            </div>
+            <div class="col-md-6 text-right"><a data-dismiss="modal" href="#"><i style="color:orangered;" class="fas fa-times"></i></a></div>
+
+          </div>
+          <div class="row" style="border-bottom:thin #ccc solid;">
+            <div class="col-md-6">
+              <h5 class="mb-1 pb-0"> <i style="color:#003366" class="fas fa-box pl-1"></i> N2543553</h5>
+            </div>
+            <div class="col-md-6">
+              Roberts Body Shop (72270)
+            </div>
+          </div>
+          <div class="row mt-1">
+            <div class="col-md-3">
+              DUE:
+              <h5>$50.00</h5>
+            </div>
+            <div class="col-md-3">
+              COLLECTED:
+              <h5>$10.00</h5>
+            </div>
+            <div class="col-md-3">
+              REMAINING:
+              <h5><span style="color:orangered"><i class="fas fa-alert"></i>($40.00)</span></h5>
+            </div>
+            <div class="col-md-3 text-right">
+              <span class="manifest-label text-left">Date:</span><span class="manifest-data"> 08/18/18</span><br/>
+              <span class="manifest-label text-left">Terms:</span><span class="manifest-data"> COD</span>
+            </div>
+
+          </div>
+
+          <!--add payment accordion-->
+          <div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+            <div class="row pt-1 pb-1" style="background-color:#0c5297;color:white;margin-left:1px;margin-right:1px;">
+              <div class="col-md 4">
+                <span class="mTableHeader ml-3">METHOD</span></div>
+              <div class="col-md 4">
+                <span class="mTableHeader ml-5 pl-4">AMOUNT</span></div>
+              <div class="col-md 3">
+                <span class="mTableHeader ml-5 pl-5">REFERENCE</span></div>
+              <div class="col-md 3 text-right">
+
+                <a style="color:white;" data-toggle="collapse" data-parent="#accordion" href="#addPayment" aria-expanded="true" aria-controls="collapseOne">
+                  <i class="fas fa-chevron-down"></i> Add</a>
+
+              </div>
+            </div>
+
+            <div style="background-color:aliceblue" id="addPayment" class="collapse pr-1 pl-1" role="tabpanel" aria-labelledby="headingOne">
+              <div class="row card-body">
+
+                <div class="col-md-4">
+                  <select class="selectpicker" data-size="5" data-style="btn btn-primary btn-round" title="Method">
+                    <option value="2">Cash</option>
+                    <option value="3">Check</option>
+                    <option value="3">Credit Card</option>
+                    <option value="3">CC on File</option>
+                    <option value="3">Credit Invoice</option>
+                    <option value="3">Open Return</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group ">
+                    <input style="background-color:#fff" type="text" class="form-control" placeholder="Amount">
+
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group ">
+                    <input style="background-color:#fff" type="text" class="form-control" placeholder="Reference #">
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <button class="btn btn-primary btn-round  btn-icon pt-0 mt-0 pr-5">
+                    <i class="fas fa-check"></i>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!--end add payment accordion-->
+          <!--table-->
+          <div class="table-responsive">
+            <table class="table">
+
+              <tbody>
+                <tr>
+                  <td> <select class="selectpicker" data-size="7" data-style="btn btn-primary btn-round" title="Check">
+
+                      <option value="2">Cash</option>
+                      <option value="3">Check</option>
+                      <option value="3">Credit Card</option>
+                      <option value="3">CC on File</option>
+                      <option value="3">Credit Invoice</option>
+                      <option value="3">Open Return</option>
+                    </select></td>
+                  <td>
+                    <div class="form-group pt-2">
+                      <input type="text" class="form-control" placeholder="$8.00">
+
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group pt-2">
+                      <input type="text" class="form-control" placeholder="1234">
+                    </div>
+                  </td>
+                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                </tr>
+                <tr>
+                  <td> <select class="selectpicker" data-size="7" data-style="btn btn-primary btn-round" title="Cash">
+
+                      <option value="2">Cash</option>
+                      <option value="3">Check</option>
+                      <option value="3">Credit Card</option>
+                      <option value="3">CC on File</option>
+                      <option value="3">Credit Invoice</option>
+                      <option value="3">Open Return</option>
+                    </select></td>
+                  <td>
+                    <div class="form-group pt-2">
+                      <input type="text" class="form-control" placeholder="$10.00">
+
+                    </div>
+
+                  </td>
+                  <td>
+                    <div class="form-group pt-2">
+                      <input type="text" class="form-control" placeholder=""></div>
+                  </td>
+                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                </tr>
+                <tr>
+                  <td> <select class="selectpicker" data-size="7" data-style="btn btn-primary btn-round" title="Credit Invoice">
+
+                      <option value="2">Cash</option>
+                      <option value="3">Check</option>
+                      <option value="3">Credit Card</option>
+                      <option value="3">CC on File</option>
+                      <option value="3">Credit Invoice</option>
+                      <option value="3">Open Return</option>
+                    </select></td>
+                  <td>
+                    <div class="form-group pt-2">
+                      <input type="text" class="form-control" placeholder="$80.00">
+
+                    </div>
+
+                  </td>
+                  <td>
+                    <div class="form-group pt-2">
+                      <input type="text" class="form-control" placeholder="N784877">
+                    </div>
+                  </td>
+                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                </tr>
+                <tr>
+                  <td> <select class="selectpicker" data-size="7" data-style="btn btn-primary btn-round" title="Check">
+
+                      <option value="2">Cash</option>
+                      <option value="3">Check</option>
+                      <option value="3">Credit Card</option>
+                      <option value="3">CC on File</option>
+                      <option value="3">Credit Invoice</option>
+                      <option value="3">Open Return</option>
+                    </select></td>
+                  <td>
+                    <div class="form-group pt-2">
+                      <input type="text" class="form-control" placeholder="$50.00">
+
+                    </div>
+
+                  </td>
+                  <td>
+                    <div class="form-group pt-2">
+                      <input type="text" class="form-control" placeholder="2001">
+                    </div>
+                  </td>
+                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+
+
+            <!--end table-->
+            <div class="row text-right">
+              <div class="col-md-12">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
